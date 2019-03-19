@@ -9,9 +9,7 @@ const getFakeMembers = count => new Promise((resolves, rejects) => {
     resolves(JSON.parse(request.response).results) : 
   request.onerror = (err) => rejects(err)
   request.send()
-}) 
-
-//onClick = {() => {console.log('ss');}}
+})  
 
 const Member = ({ gender,email, picture, name, location, dob, }) =>
   <div className="member">  
